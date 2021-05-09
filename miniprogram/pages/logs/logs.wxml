@@ -1,0 +1,31 @@
+<!--logs.wxml-->
+<view class="container log-list">
+  <view class="table">
+    <view class="table-tr">
+      <view class="table-th">时间</view>
+      <view class="table-th">理由</view>
+      <view class="table-th">分数</view>
+      <view class="table-th">剩余总分</view>
+    </view>
+  <view class="table-tr" wx:for="{{recordsArr}}">
+    <view class="table-td">{{item.time}}</view>
+    <view class="table-td">{{item.reason}}</view>
+    <view class="table-td">{{item.count}}</view>
+    <view class="table-td">{{item.total}}</view>
+  </view>
+  </view>
+  <!-- <ul>
+    <li id="myli">
+      <view id="time">时间</view>
+      <view id="reason"> 理由 </view>
+      <view id="count"> 分数</view>
+      <view id="total"> 剩余总分 </view>
+    </li>
+    <li wx:for="{{recordsArr}}" id="myli">
+      <view id="time">{{item.time}} </view>
+      <view id="reason"> {{item.reason}} </view>
+      <view id="count"> {{item.count}} </view>
+      <view id="total"> {{item.total}} </view>
+    </li>
+  </ul> -->
+</view>

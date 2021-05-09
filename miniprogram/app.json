@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/chat/chat",
+    "pages/index/index",
+    "pages/home/home",
+    "pages/about/about",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarTitleText": "You can find you in my brain"
+  },
+  "tabBar": {
+    "color": "#bbbbbb",
+    "selectedColor": "#ffffff",
+    "backgroundColor": "#181713",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "留言"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "聊天"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json",
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "style": "v2"
+}

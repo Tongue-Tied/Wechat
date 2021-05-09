@@ -1,0 +1,6 @@
+
+page{
+  /* opacity:0 !important; */
+  background-image:url('https://7369-simple-boy-e7oz2-1300209005.tcb.qcloud.la/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200622094527.jpg?sign=f57d3bb67d8e97c8226c53f8680a7ccf&t=1592790615');
+  background-size: 100% 100%;
+}

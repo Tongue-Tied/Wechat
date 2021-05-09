@@ -1,0 +1,197 @@
+.usermotto {
+  width: 355px;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: annimaion 3.5s;
+  background: rgba(19, 20, 20, 0.253);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@keyframes annimaion {
+  from {
+    transform: translate(0%,100%);
+  }
+
+  to {
+    transform: translate(0%,0%);
+  }
+}
+.back_active{
+  /* background-image: url('https://7369-simple-boy-e7oz2-1300209005.tcb.qcloud.la/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210410165223.jpg?sign=e3228d7b03e1ea4e81381a9d94ed99a6&t=1618044781'); */
+  background-size: 100%;
+  min-height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: jj_anm 2s;
+  color: rgb(2, 2, 1);
+}
+@keyframes jj_anm{
+  from{
+    transform: rotateY(180deg);
+  }
+  to{
+    transform: rotateY(0deg);
+  }
+}
+.usermotto .xixi {
+  margin-top: 50px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.usermotto .haha {
+  margin: 0 auto;
+  width: 80%;
+  min-height: 150px;
+  padding-top: 10px;
+  word-break: break-all;
+  padding-bottom: 10px;
+}
+
+.want {
+  font-size: 26px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+video {
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  min-height: 100%;
+  background-image: url("https://7369-simple-boy-e7oz2-1300209005.tcb.qcloud.la/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210408212420.jpg?sign=986eb8bcaefeb9db4fc528f2cfcd835e&t=1617888320");
+  background-size: 100% 100%;
+  background-repeat: repeat-y;
+  animation:css3 3s;
+}
+@keyframes css3{
+  from{
+    transform: rotateY(600deg);
+  }
+  to{
+    transform: rotateY(0deg);
+  }
+}
+.top {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(173, 169, 169);
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  z-index: 1000000;
+}
+
+.top text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+  transform: translate(-50%, -50%);
+}
+
+.speak {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  margin: 20px;
+}
+
+.word_length {
+  margin-top: 20px;
+}
+
+.input_box {
+  width: 100%;
+  height: 300px;
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1000000;
+  background-color: rgb(134, 132, 132);
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input_box .input {
+  background-color: white;
+  margin: 0 auto;
+  width: 80%;
+  height: 60%;
+  margin-top: 20px;
+  border-radius: 10px;
+  text-indent: 5px;
+  padding: 5px;
+}
+
+.sure_btn {
+  background-color: rgb(228, 174, 174);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  /* margin-top: 30px; */
+}
+.upload{
+  background-color: rgb(228, 174, 174);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+.input_active{
+  animation: input 1s;
+}
+.input_active2{
+  animation: output 1s;
+}
+@keyframes input{
+  from{
+    height: 0;
+  }
+  to{
+    height: 300px;
+  }
+}
+@keyframes output{
+  from{
+    height: 300px;
+  }
+  to{
+    height: 0;
+  }
+}
+.user_button{
+  position: fixed;
+  left: 0;
+  top: 200px;
+  z-index: 1000000;
+}
+/*!
+ * WeUI v0.4.1 (https://github.com/weui/weui)
+ * Copyright 2016 Tencent, Inc.
+ * Licensed under the MIT license
+ */

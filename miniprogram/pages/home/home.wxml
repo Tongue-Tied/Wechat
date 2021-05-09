@@ -1,0 +1,27 @@
+<!--pages/home/home.wxml-->
+<view>
+  <view class="log">
+    <view>
+      <view class="biaoxian" bindtap="god">小王今天表现咋样</view>
+      <view class="fenshu" >目前分数: {{AllRecords}}</view>
+    </view>
+    <ul class="mydiv">
+      <li>
+        <view class="fen1">为啥给小王加分或者扣分</view>
+        <textarea  id="input" maxlength='-1 ' bindblur="bindTextAreaBlur" placeholder="别扣了球球你别扣了" placeholder-class="center" value="{{ceshi}}" />
+      </li>
+      <li>
+        <view class="fen1">给小王加几分或者扣几分</view>
+        <view id="jian">
+          <view bindtap="minus" class="minus">-</view>
+          <view class="my_records">{{myRecords}}</view>
+          <view bindtap='add' class="add">+</view>
+        </view>
+      </li>
+      <li class="submit">
+        <button  id="sure" bindtap="sure">确认</button>
+        <navigator bindtap="check" id="check" open-type="navigateto">查看记录</navigator>
+      </li>
+    </ul>
+  </view>
+</view>

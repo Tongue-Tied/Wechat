@@ -1,0 +1,54 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  color: white;
+}
+#myli {
+  display: flex;
+  width: 650rpx;
+  word-break: break-all;
+}
+
+#myli view {
+  margin-left: 4px;
+}
+
+.table,
+.table div {
+  margin: 0 auto;
+}
+
+.table {
+  display: table;
+  width: 95%;
+  border-collapse: collapse; 
+  box-sizing: border-box;
+}
+
+.table-tr {
+  display: table-row; 
+  height: 92rpx;
+}
+
+.table-th {
+  display: table-cell;
+  font-weight: bold;
+  border: 1rpx solid gray;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-td {
+  width: 190px;
+  height: auto;
+  display: table-cell;
+  border: 1rpx solid gray;
+  text-align: center;
+  vertical-align: middle;
+  word-break: break-all;
+}
+page{
+  background-image:url('https://7369-simple-boy-e7oz2-1300209005.tcb.qcloud.la/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200622094527.jpg?sign=f57d3bb67d8e97c8226c53f8680a7ccf&t=1592790615');
+  background-size: 100% 100%;
+}

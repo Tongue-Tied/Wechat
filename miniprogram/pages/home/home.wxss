@@ -1,0 +1,118 @@
+#app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+page{
+  /* background-color: #e7c5cf; */
+  color: #dfeee7;
+}
+.log {
+  text-align: center;
+  /* background: rgb(233, 157, 157); */
+}
+h1,
+h2 {
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #dfeee7;
+}
+.biaoxian {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.fenshu {
+  margin-top: 50px;
+}
+.fen1 {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.mydiv {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.mydiv li div {
+  margin-top: 32px;
+}
+.mydiv li :nth-child(2) {
+  font-weight: 500;
+}
+.submit {
+  margin-top: 20px;
+}
+#input {
+  /* width: 260px; */
+  border: #2c3e50 1px solid;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow:10px  10px 10px -5px gray;
+}
+.center{
+  text-align: center;
+  line-height: 150px;
+  color: #dfeee7;
+  position: absolute;
+  top: 125px;
+}
+#jian{
+  margin-top: 10px;
+}
+#jian view {
+  display: inline-block;
+  width: 50px;
+  background-color: rgb(240, 228, 228);
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 5px;
+  /* background-color: #e7c5cf; */
+}
+#check {
+  margin-top: 30px;
+  width: 184px;height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  background-color: rgb(240, 228, 228);
+  border-radius: 4px;
+  color: #000000;
+  font-weight: 700;
+}
+#sure {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#sure{
+  background-color: rgb(240, 228, 228);
+}
+.minus{
+  color: #000000;
+}
+.add{
+  color: #000000;
+}
+.my_records{
+  color: #000000;
+}
+page{
+  background-image:url('https://7369-simple-boy-e7oz2-1300209005.tcb.qcloud.la/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200622094527.jpg?sign=f57d3bb67d8e97c8226c53f8680a7ccf&t=1592790615');
+  background-size: 100% 100%;
+}

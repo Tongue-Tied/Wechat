@@ -1,0 +1,23 @@
+<view class="chat_container">
+  <view class="box" wx:if="{{!hasUserInfo}}">
+    <button bindtap="getUserProfile"> 点击进入聊天室 </button>
+  </view>
+  <scroll-view class="scroll_view" wx:if="{{hasUserInfo}}">
+    <view class="sv_box {{openID === item._openid ? 'sv_active' : ''}}" wx:for="{{message}}" wx:key="index">
+      <view class="avatar">
+        <!-- <view class="nick_name">{{item.userInfo.nickName}}</view> -->
+        <image src="{{item.userInfo.avatarUrl}}"></image>
+      </view>
+      <view class="msg">
+        <view>{{item.msg}}</view>
+        <!-- <view class="arrow"></view> -->
+      </view>
+    </view>
+  </scroll-view>
+  <view class="input_box" wx:if="{{hasUserInfo}}">
+    <input type="text" bindinput="input" value="{{input_value}}" bindconfirm="confirm" confirm-type="send" />
+    <!-- <view>
+      <text>发送</text>
+    </view> -->
+  </view>
+</view>
