@@ -3,6 +3,7 @@
 const app = getApp()
 const db = wx.cloud.database()
 const _ = db.command
+const myaudio = wx.createInnerAudioContext({})
 
 Page({
   data: {
@@ -33,12 +34,10 @@ Page({
   blur: function (params) {
     if (this.data.textAreaShow) {
       this.setData({
-        textAreaShow: false,
         textAreaShow1: true
       })
     } else {
       this.setData({
-        textAreaShow: false,
         textAreaShow1: false
       })
     }
@@ -128,6 +127,18 @@ Page({
               imgUrl: res.fileID
             },
             success: res => {
+              let heightTime = this.data.textAreaShow
+
+              let timer = setInterval(() => {
+                if (heightTime === 0) {
+                  clearInterval(timer)
+                } else {
+                  heightTime -= 10
+                  this.setData({
+                    textAreaShow: heightTime
+                  })
+                }
+              }, 1);
               wx.showToast({
                 title: '新增骚话成功',
               })
@@ -260,8 +271,16 @@ Page({
   bindGetUserInfo(e) {
     console.log(e.detail.userInfo)
   },
+  onShow: function name(params) {
+    myaudio.play();
+  },
   onLoad: function () {
+    myaudio.src = "https://7369-simple-boy-e7oz2-1300209005.tcb.qcloud.la/music/%E7%BA%A2.mp3?sign=26a2d607cb92ceefa4df8f25638e8672&t=1623326615";
     let date = Date.now()
+    wx.setInnerAudioOption({
+      obeyMuteSwitch: false,
+    })
+    myaudio.play();
     let util = require("../../utils/util");
     date = util.formatTime(date)
     this.setData({
@@ -269,15 +288,31 @@ Page({
     })
     console.log(this.data.time)
     const db = wx.cloud.database()
-    db.collection('enter-time').add({
-      data: {
-        time: this.data.time,
-        Page: '留言'
-      },
-      success: res => {
+    wx.cloud.callFunction({
+        name: 'watch'
+      })
+      .then(res => {
+        if (res.result.openid !== 'ofF725XkmHKTiWDJKxomlJ6AZiFY') {
+          db.collection('enter-time').add({
+            data: {
+              time: this.data.time,
+              Page: '留言'
+            },
+            success: res => {
 
-      }
-    })
+            }
+          })
+        }
+      })
+    // db.collection('enter-time').add({
+    //   data: {
+    //     time: this.data.time,
+    //     Page: '留言'
+    //   },
+    //   success: res => {
+
+    //   }
+    // })
 
     wx.cloud.init()
     wx.cloud.callFunction({

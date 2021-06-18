@@ -1,23 +1,7 @@
-<!--index.wxml-->
-<!-- <open-data type="userAvatarUrl"></open-data>
-<open-data type="userNickName"></open-data>
-<button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
-<view wx:else>请升级微信版本</view> -->
-<!-- <view class="weui_msg">
-	<view class="weui_icon_area"><i class="weui_icon_info weui_icon_msg"></i></view>
-	<view class="weui_text_area">
-		<h4 class="weui_msg_title">很抱歉, 小程序ViJiaO由于内容涉嫌违规, 已暂停服务</h4>
-	</view>
-</view> -->
 <view>
-	<!-- <view>
-		<view>ViJiaO因违规已暂停服务</view>
-		<view>很抱歉, 小程序ViJiaO由于内容涉嫌违规, 已暂停服务</view>
-	</view> -->
 	<scroll-view bindtap="blur" enable-flex="true" scroll-y='true' scroll-top="{{scrollTop}}" style="height:{{height}}px"
 		bindscrolltolower='lower' class="container">
-		<!-- <view class="speak">山是我 水是你 山水不相逢</view> -->
-		<!-- <view bindtap="alertMe">2312312333333333333333333333333333</view> -->
+		<!-- <view class="speak">山是我 水是你  </view> -->
 		<view wx:for="{{motto}}" bindscroll="scrolling" data-id="{{index}}" bindtap="touchstart"
 			wx:key="index" class="{{!item.isBack ? 'usermotto' : 'back_active usermotto'}}"
 			style="background-image:url({{item.imageUrl !== undefined ? item.imageUrl : ''}})" wx:if="{{index < myIndex}}">
@@ -25,14 +9,14 @@
 			<view class="word_length" wx:if="{{!item.isBack}}">第{{motto.length - index}}句</view>
 			<view class="xixi" wx:if="{{!item.isBack}}">{{item.time}}</view>
 			<view class="haha" wx:if="{{!item.isBack}}">{{item.content}}</view>
+			<!-- <audio src="http://m10.music.126.net/20210610194108/3fee5126ce0a5c9102878f634f2c2866/ymusic/030f/070b/075e/4e89201cd30a871a07e6044e6a648faf.mp3"></audio> -->
 		</view>
 	</scroll-view>
-	<!-- <button class="user_button" bindtap="getUserProfile"> 获取头像昵称 </button> -->
 	<view class="top" bindtap="goTop">
 		<text>+</text>
 	</view>
 	<view class="input_box {{textAreaShow ? 'input_active' : ''}} {{textAreaShow1 ? 'input_active2' : ''}}"
-		style="height:{{textAreaShow === false ? 0 : 300 +'px' }}">
+		style="height:{{textAreaShow ? 300 + 'px' : 0 }}">
 		<textarea class="input" maxlength="1000" bindinput="passWdInput" />
 		<button class="sure_btn" bindtap="send_msg">确认</button>
 		<button class="upload" bindtap="chose_image">uploadImage</button>

@@ -1,26 +1,24 @@
 {
   "pages": [
-    "pages/chat/chat",
     "pages/index/index",
-    "pages/home/home",
-    "pages/about/about",
-    "pages/logs/logs"
+    "pages/chat/chat"
   ],
   "window": {
-    "navigationBarTitleText": "You can find you in my brain"
+    "navigationBarTitleText": "雾都情话",
+    "navigationBarBackgroundColor": "#50b6db"
   },
   "tabBar": {
-    "color": "#bbbbbb",
+    "color": "#black",
     "selectedColor": "#ffffff",
-    "backgroundColor": "#181713",
+    "backgroundColor": "#50b6db",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "留言"
+        "text": "热情"
       },
       {
         "pagePath": "pages/chat/chat",
-        "text": "聊天"
+        "text": "万岁"
       }
     ]
   },

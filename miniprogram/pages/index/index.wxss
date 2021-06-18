@@ -1,22 +1,23 @@
 .usermotto {
   width: 355px;
   margin: 0 auto;
+  /* min-height: 300px !important; */
+  /* min-height:325px; */
+  height: auto;
   margin-top: 10px;
   text-align: center;
   border-radius: 10px;
-  color: rgb(255, 255, 255);
+  color: #fafafa;
   font-weight: 600;
-  display: flex;
-  flex-direction: column;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   animation: annimaion 3.5s;
-  background: rgba(19, 20, 20, 0.253);
+  background: rgba(103, 202, 224, 0.404);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-@keyframes annimaion {
+/* @keyframes annimaion {
   from {
     transform: translate(0%,100%);
   }
@@ -24,11 +25,11 @@
   to {
     transform: translate(0%,0%);
   }
-}
+} */
 .back_active{
   /* background-image: url('https://7369-simple-boy-e7oz2-1300209005.tcb.qcloud.la/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210410165223.jpg?sign=e3228d7b03e1ea4e81381a9d94ed99a6&t=1618044781'); */
   background-size: 100%;
-  min-height: 300px;
+  min-height: 325px;
   background-position: center;
   background-repeat: no-repeat;
   display: flex;
@@ -37,30 +38,30 @@
   animation: jj_anm 2s;
   color: rgb(2, 2, 1);
 }
-@keyframes jj_anm{
+/* @keyframes jj_anm{
   from{
     transform: rotateY(180deg);
   }
   to{
     transform: rotateY(0deg);
   }
-}
+} */
 .usermotto .xixi {
-  margin-top: 50px;
-  height: 30px;
+  padding-top: 50px;
   line-height: 30px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .usermotto .haha {
   margin: 0 auto;
   width: 80%;
-  min-height: 150px;
   padding-top: 10px;
   word-break: break-all;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
-
+.word_length {
+  padding-top: 20px;
+}
 .want {
   font-size: 26px;
   font-weight: 700;
@@ -74,28 +75,29 @@ video {
 .container {
   width: 100%;
   min-height: 100%;
-  background-image: url("https://7369-simple-boy-e7oz2-1300209005.tcb.qcloud.la/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20210408212420.jpg?sign=986eb8bcaefeb9db4fc528f2cfcd835e&t=1617888320");
-  background-size: 100% 100%;
-  background-repeat: repeat-y;
-  animation:css3 3s;
+  background-image: url("https://7369-simple-boy-e7oz2-1300209005.tcb.qcloud.la/my-photo301?sign=88a1f68573578b60280344a65a60cd54&t=1623321034");
+  background-size: cover;
+  background-position: center;
+  /* animation:css3 3s; */
 }
-@keyframes css3{
+/* @keyframes css3{
   from{
     transform: rotateY(600deg);
   }
   to{
     transform: rotateY(0deg);
   }
-}
+} */
 .top {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: rgb(173, 169, 169);
+  background-color: rgba(103, 202, 224, 0.404);
   position: fixed;
   bottom: 120px;
   right: 20px;
   z-index: 1000000;
+  color: white;
 }
 
 .top text {
@@ -118,9 +120,6 @@ video {
   margin: 20px;
 }
 
-.word_length {
-  margin-top: 20px;
-}
 
 .input_box {
   width: 100%;
